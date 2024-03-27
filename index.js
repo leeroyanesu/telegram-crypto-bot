@@ -1,11 +1,9 @@
-'use strict';
-
 const TelegramBot = require("node-telegram-bot-api");
 const { version, bitfinex, coinex, bybit } = require("ccxt");
 const moment = require('moment');
 const { MongoClient, ObjectId } = require('mongodb');
 
-const CONNECTION_URL = 'mongodb+srv://<username>:<password>@cluster0.lhtqjq1.mongodb.net/?retryWrites=true&w=majority';
+const CONNECTION_URL = '{MONGODB_CONNECTION_STRING}';
 const DATABASE_NAME = 'test';
 
 let token = "{TELEGRAM_TOKEN}"
